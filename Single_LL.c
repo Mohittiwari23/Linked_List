@@ -148,7 +148,6 @@ void reverse(){
             head=temp1;
         }
     }
-
 }
 int main(){
     int choice,n;
@@ -156,7 +155,7 @@ int main(){
 	
 	while(1){
 		printf("\nenter the choice\n");
-		printf("1. ins_beg\n2. ins_end\n3.ins_specific\n4. del_beg\n5. del_end\n6.del_specific\n7.search\n8.traverse\n9. exit\n");
+		printf("1. ins_beg\n2. ins_end\n3. ins_specific\n4. del_beg\n5. del_end\n6. del_specific\n7. search\n8. traverse\n9. reverse\n10. exit\n");
 		scanf("%d",&choice);
 		switch(choice){
 			case 1:
