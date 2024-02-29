@@ -31,7 +31,7 @@ void ins_end(struct node *new1){
 void ins_specific(struct node *new1,int n){
     int i=1;
     temp=head;
-    struct node *temp1=head;
+    struct node *temp1=head;                                       
     if(n<=count)
     {
         if(head==NULL)
@@ -134,6 +134,22 @@ void traverse(){
 		temp = temp->next;
 	}
 }
+void reverse(){
+    struct node *temp1=head;
+    if(head==NULL)
+        printf("No nodes\n");
+    else{    
+        temp=head->next;
+        head->next=NULL;
+        while(temp!=NULL){
+            temp1=temp;
+            temp=temp->next;
+            temp1->next=head;
+            head=temp1;
+        }
+    }
+
+}
 int main(){
     int choice,n;
 	struct node *new1;
@@ -183,6 +199,9 @@ int main(){
                     search(n);
                     break;                
 			case 8:
+					reverse();
+					break;
+			case 9:
 					traverse();
 					break;
 			default:
