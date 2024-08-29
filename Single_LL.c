@@ -149,6 +149,10 @@ void reverse(){
         }
     }
 }
+
+void count(){
+    printf("%d", count);
+}
 int main(){
     int choice,n;
 	struct node *new1;
